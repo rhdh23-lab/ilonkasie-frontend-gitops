@@ -1,0 +1,15 @@
+app:
+  name: ilonkasie-poi-map-app
+  namespace: ilonkasie
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/ilonkasie-frontend
+  org: rhdh23-lab
+  name: ilonkasie-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ilonkasie/poi-map-app
+  tag: latest
